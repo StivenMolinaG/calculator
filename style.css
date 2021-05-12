@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 .body{
     background-color: #a0bb8e;
@@ -20,35 +21,75 @@
     height: 25%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
 }
 .display{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     width: 95%;
     height: 75%;
     margin: 15px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-right: 15px;
 }
 .keys{
-    background: transparent;
-    width: 94%;
-    height: 65%;
+    width: 100%;
+    height: 75%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 20px;
 }
 .numbers{
-    width: 23%;
-    height: 20%;
+    width: 19%;
+    height: 18%;
     background-color: #cfcccc;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .equals{
-    width: 49%;
+    width: 43%;
 }
 .numbers:hover{
     background-color: rgb(187, 194, 194);
+}
+
+@media screen and (max-width: 720px){
+    .container{
+        width: 45%;
+        height: 60%;
+    }
+    .input-container{
+        width: 100%;
+        height: 35%;
+    }
+    .display{
+        width: 85%;
+        height: 60%;
+    }
+    .text{
+        font-size: 25px;
+        padding: auto;
+    }
+    .keys{
+        width: 100%;
+        height: 65%;
+    }
+    .numbers{
+        width: 15%;
+        height: 15%;
+        font-size: 15px;
+    }
+    .equals{
+        width: 40%;
+    }
 }
